@@ -18,14 +18,14 @@ export class CategoriasPage {
     public navCtrl: NavController,
     public navParams: NavParams,
     public categoriaService: CategoriaService) {
-}
+  }
 
   ionViewDidLoad() {
     this.categoriaService.findAll()
       .subscribe(response => {
         this.items = response;
       },
-      error => {});
+        error => { });
   }
 
 }

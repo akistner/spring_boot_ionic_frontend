@@ -41,7 +41,7 @@ export class ErrorInterceptor implements HttpInterceptor {
       message: 'Email ou senha incorretos',
       enableBackdropDismiss: false,
       buttons: [
-        {text: 'Ok'}
+        { text: 'Ok' }
       ]
     });
     alert.present();
@@ -57,7 +57,7 @@ export class ErrorInterceptor implements HttpInterceptor {
       message: errorObj.message,
       enableBackdropDismiss: false,
       buttons: [
-        {text: 'Ok'}
+        { text: 'Ok' }
       ]
     });
     alert.present();
