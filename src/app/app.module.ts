@@ -30,7 +30,7 @@ import { AuthInterceptorProvider } from '../interceptors/auth-interceptor';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     CategoriaService,
     AuthInterceptorProvider,
     ErrorInterceptorProvider,
@@ -39,4 +39,4 @@ import { AuthInterceptorProvider } from '../interceptors/auth-interceptor';
     ClienteService,
   ]
 })
-export class AppModule {}
+export class AppModule { }
